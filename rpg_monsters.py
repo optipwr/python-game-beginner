@@ -1,5 +1,7 @@
-class Goblin(object):
+from Character import Character
+class Goblin(Character):
 	def __init__(self):
+		Character.__init__(self);
 		self.name = "goblin";
 		self.health = 6;
 		self.power = 22;

@@ -1,3 +1,4 @@
+from Character import Character
 import time;
 # Give the class a name...Hero
 class Hero(object):
@@ -5,6 +6,7 @@ class Hero(object):
 	# Pass itself so that we have a "this" to work with
 	def __init__(self):
 		# Define some class properties (attached to self)
+    Character.__init__(self);
 		self.name = "Michael";
 		self.health = 10;
 		self.power = 5;
